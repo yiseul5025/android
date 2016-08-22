@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.baseballnumbergame.baseballnumbergame"
+    android:background="#99FF99"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:text="Baseball Game"
+            android:textColor="#003300"
+            android:gravity="center"
+            android:textSize="20pt"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/start"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Start"
+                android:onClick="start"/>
+            <Button
+                android:id="@+id/go"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Go"
+                android:onClick="go"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:hint=""
+                android:gravity="center"
+                android:textSize="20pt"
+                android:textColor="#FF0033"/>
+            <EditText
+                android:id="@+id/b"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:hint=" "
+                android:gravity="center"
+                android:textSize="20pt"
+                android:textColor="#FF0033"/>
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:hint=" "
+                android:gravity="center"
+                android:textSize="20pt"
+                android:textColor="#FF0033"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
