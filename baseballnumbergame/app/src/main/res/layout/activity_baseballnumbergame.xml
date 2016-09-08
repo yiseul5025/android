@@ -17,53 +17,128 @@
         android:orientation="vertical"
         android:gravity="center">
         <TextView
-            android:layout_width="500dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Baseball Game"
             android:textColor="#003300"
             android:gravity="center"
             android:textSize="20pt"/>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="280dp"
+            android:layout_height="325dp"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:weightSum="1">
             <Button
                 android:id="@+id/start"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="Start"
-                android:onClick="start"/>
+                android:onClick="onClick"/>
             <Button
-                android:id="@+id/go"
+                android:id="@+id/ne"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="Go"
-                android:onClick="go"/>
+                android:text="new"
+                android:onClick="onClick"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/cntt"/>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingRight="5px">
+                    <TextView
+                        android:id="@+id/cn1"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn2"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn3"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn4"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn5"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn6"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn7"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn8"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/cn9"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+</ScrollView>
+
+
+
         </LinearLayout>
         <LinearLayout
+            style="@android:style/Widget.EditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center">
+
+
             <EditText
+                android:nextFocusDown="@id/b"
+                android:layout_weight="1"
                 android:id="@+id/a"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:hint=""
-                android:gravity="center"
-                android:textSize="20pt"
-                android:textColor="#FF0033"/>
-            <EditText
-                android:id="@+id/b"
+                android:inputType="number"
+                android:maxLength="1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:hint=" "
                 android:gravity="center"
                 android:textSize="20pt"
                 android:textColor="#FF0033"/>
+
             <EditText
+                android:nextFocusDown="@id/c"
+                android:layout_weight="1"
+                android:id="@+id/b"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:hint=" "
+                android:gravity="center"
+                android:textSize="20pt"
+                android:textColor="#FF0033"/>
+
+            <EditText
+                android:layout_weight="1"
                 android:id="@+id/c"
+                android:inputType="number"
+                android:maxLength="1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:hint=" "
